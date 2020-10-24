@@ -1,0 +1,45 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background-color: #edf5fe!important;
+}
+
+body{
+    display: flex;
+    font-family: system-ui;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed gray;
+    box-shadow: 0px 20px 20px 0px #00000017;
+    border-radius: 25px;
+    padding: 8rem!important;
+}
+
+.browse{
+    cursor: pointer;
+    color: #2196f3;
+}
+
+.file{
+    display: none;
+}
+
+.btn{
+    font-size: 1.5rem!important;
+}
+
+label{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}

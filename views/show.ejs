@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/show_index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+</head>
+<body>
+        <form class="text-left border border-light p-5 col-lg-6 offset-lg-3" action="/send/email" method="POST">
+            <div class="form-group">
+                <h1 class="mb-4">Send your Email! &nbsp;😎</h1>
+                <p>
+                    <label>Sender's email address</label>
+                    <input class="form-control" type="email" name="emailFrom" placeholder="Sender's Email">
+                </p>
+                <p>
+                    <label>Reciever's email address</label>
+                    <input class="form-control" type="email" name="emailTo" placeholder="Receiver's Email" >
+                </p>
+                <p>
+                    <input class="form-control" type="hidden" name="uuid" value="<%= uuid %>">
+                </p>
+                <p>
+                    <label>Download Link</label>
+                    <input class="form-control URl" type="text" value="<%= file %>" readonly>
+                </p>
+                <p class="full">
+                    <button class="btn btn-success " type="submit">SEND EMAIL</button>
+                </p>
+            </div>
+            
+        </form>
+    
+    <script src="/js/index_show.js"></script>
+</body>
+</html>

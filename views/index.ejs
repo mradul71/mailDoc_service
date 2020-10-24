@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+</head>
+<body>
+    <section>
+        <h1>Welcome to MailDoc services</h1>
+        <form action="/api/file" id="uploadForm" enctype="multipart/form-data" method="post">
+            <div class="container">
+                <label>Choose your files, <span class="browse">browse</span></label>
+                    <p class="status" style="display: none; font-size: 15px; color: #4BB543;">File added successfully!</p>
+                    <input type="file" class="file" name="userFile" />
+                    <button class="btn btn-primary" type="submit" name="submit">Upload File</button>
+            </div>
+        </form>
+    </section>
+    <script src="/js/index.js"></script>
+</body>
+</html>
